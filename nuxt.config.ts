@@ -1,14 +1,18 @@
 export default defineNuxtConfig({
-  modules: ['@nuxtjs/pwa'],
-
   css: ['@/css/tailwind.css'],
+
+  modules: ['@kevinmarrec/nuxt-pwa'],
 
   postcss: {
     plugins: {
-      tailwindcss: {},
-      autoprefixer: {}
+      autoprefixer: {},
+      tailwindcss: {}
     }
   },
 
-  srcDir: 'src'
+  srcDir: 'src',
+
+  typescript: {
+    typeCheck: true
+  }
 })

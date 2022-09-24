@@ -1,7 +1,9 @@
 <script setup lang="ts">
-const { data } = useAsyncData(async () => '1243')
+useHead({
+  title: 'App'
+})
 </script>
 
 <template>
-  <div class="text-red-300">{{ data }}</div>
+  <NuxtPage />
 </template>
