@@ -1,3 +1,5 @@
+const production = process.env.NODE_ENV === 'production'
+
 export default defineNuxtConfig({
   css: ['@/css/tailwind.css'],
 
@@ -6,7 +8,8 @@ export default defineNuxtConfig({
   postcss: {
     plugins: {
       autoprefixer: {},
-      tailwindcss: {}
+      tailwindcss: {},
+      ...(production ? { cssnano: {} } : {})
     }
   },
 

@@ -1,3 +1,5 @@
 <script setup lang="ts"></script>
 
-<template>index page</template>
+<template>
+  <h1>index page</h1>
+</template>
