@@ -13,6 +13,12 @@ export default defineNuxtConfig({
     }
   },
 
+  pwa: {
+    meta: {
+      theme_color: '#000000'
+    }
+  },
+
   srcDir: 'src',
 
   typescript: {
